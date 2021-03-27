@@ -22,6 +22,13 @@ and front-end modules :
 
      npm install
 
+rename .env.example to .env and updated it with your database credentials
+
+php artisan key:generate
+
+composer update
+
+php artisan serve
 
 
 
