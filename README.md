@@ -24,11 +24,11 @@ and front-end modules :
 
 rename .env.example to .env and updated it with your database credentials
 
-php artisan key:generate
+    php artisan key:generate
 
-composer update
+    composer update
 
-php artisan serve
+    php artisan serve
 
 
 
