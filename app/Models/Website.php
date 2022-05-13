@@ -8,13 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Website extends Model
 {
     use HasFactory;
+    protected $fillable = ['url'];
 
     public function posts()
     {
         return $this->hasMany(Post::class, 'website_id');
     }
 
-    public function subscribedUsers() {
+    public function subscribedUsers()
+    {
         return $this->belongsToMany(User::class);
     }
 }

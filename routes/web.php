@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/create-post', [PostController::class, 'create']);
-Route::get('/subscribe', [UserController::class, 'subscribeToWebsite']);
+Route::post('/create-post', [PostController::class, 'create']);
+Route::post('/subscribe', [UserController::class, 'subscribeToWebsite']);
+Route::post('add-website', [WebsiteController::class, 'create']);
